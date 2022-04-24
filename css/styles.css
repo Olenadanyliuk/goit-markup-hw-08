@@ -121,7 +121,8 @@ line-height: 1.18;}
 .city {color: var(--white-color);
 font-size: 14px;
 line-height: 1.71;
-font-family: inherit;}
+font-family: inherit;
+text-decoration: none;}
 
 footer  {background-color: var(--backgr-dark);}
 .white-logo {color: var(--white-color);}
