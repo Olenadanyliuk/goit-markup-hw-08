@@ -8,7 +8,11 @@
 --backgr-white: #FFFFFF;
 --backgr-dark: #2F303A;
 --backgr-wdark: #F5F4FA;
---backgr-blue: #2196F3;}
+--backgr-blue: #2196F3;
+--backgr-darkblue: #188CE8;}
+
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
 
 body {
 background-color: var(--backgr-white);
@@ -19,7 +23,21 @@ letter-spacing: 0.03em;}
 .footer-list, .contacts, .nav, .features, .photo-list, .ex-list, .button, .portfolio {list-style: none;}
 
 
+
+
+.container, .nav li, .contacts li {outline: 2px solid tomato;}
+header {background-color: yellow;}
+
+
+
+
 /* хедер */
+.container {width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-right: auto;
+margin-left: auto;}
+
 
 /* Логотип */
 .blue-logo {color: var(--blue-color);}
@@ -32,6 +50,20 @@ line-height: 1.19;}
 .logo {text-decoration: none;}
 
 /* Навигация */
+.nav {display: flex;}
+
+.contacts {display: flex; align-items: center; }
+
+.flex-header {display: flex; align-items: center;}
+
+.container {display: flex;}
+
+
+.contacts, .nav {margin-top: 0; margin-bottom: 0; padding-left: 0;}
+
+.nav .item:not(:last-child) {margin-right: 50px;}
+.contacts .item:not(:last-child) {margin-right: 50px;}
+
 .nav a {color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -78,6 +110,9 @@ font-size: 16px;
 line-height: 1.88;
 text-align: center;
 letter-spacing: 0.06em;}
+
+
+.button-white:hover, .button-white:focus {background-color: var(--backgr-darkblue);}
 
 .hero {background-color: var(--backgr-dark);}
 
