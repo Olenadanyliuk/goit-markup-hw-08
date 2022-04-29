@@ -256,7 +256,8 @@ text-decoration: none;}
 footer  {background-color: var(--backgr-dark);}
 
 .bottom.logo {display:block; padding-top: 60px;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+text-decoration: none;}
 
 .white-logo {color: var(--white-color);}
 
