@@ -10,34 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
+
+<body>
     <!--Хедер-->
     <header>
-      <nav>
-        <a class="logo" href="./index.html#studio" target="_blank"
-          ><span class="blue-logo" lang="en">Web</span
-          ><span class="black-logo" lang="en">Studio</span></a
-        >
-        <ul class="nav">
-          <li><a href="./index.html#studio" target="_blank">Студия</a></li>
-          <li><a href="#portfolio" class="current">Портфолио</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+      <div class="container header-container">
+        <nav class="flex-header">
+          <a class="top logo" href="./index.html#studio" target="_blank"><span class="blue-logo" lang="en">Web</span><span class="black-logo" lang="en">Studio</span></a>
+          <ul class="nav">
+            <li class="item"></li><a href="./index.html#studio" target="_blank">Студия</a></li>
+           <li class="item"><a href="#portfolio" class="current">Портфолио</a></li>
+            <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
+
+
 
     <main>
       <!--Портфолио-->
-      <section>
+      <section class="section portfolio-section">
+        <div class="container">
         <h1 hidden id="portfolio">Портфолио</h1>
         <ul class="button">
           <li><button type="button" class="button-black">Все</button></li>
@@ -128,6 +135,7 @@
             <p>Приложение</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 

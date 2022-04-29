@@ -25,7 +25,7 @@ letter-spacing: 0.03em;}
 
 
 
-.container, .nav .link, .contacts .link, .person, .address, .features .item {outline: 2px solid tomato;}
+.container, .nav .link, .contacts .link, .team .container, .address, .features .item {outline: 2px solid tomato;}
 header {background-color: yellow;}
 
 
@@ -48,9 +48,9 @@ font-family: Raleway, sans-serif;
 font-size: 26px;
 line-height: 1.19;}
 
-.logo {text-decoration: none;
-padding-top: 19px;
-padding-bottom: 30px;}
+.top.logo {text-decoration: none;
+padding-top: 24px;
+padding-bottom: 25px;}
 
 /* Навигация */
 .nav {display: flex; 
@@ -102,7 +102,10 @@ font-weight: 500;
 
 
 
-.hero {padding-bottom: 205px; text-align: center;}
+.hero-title {padding-top: 200px;}
+
+
+.hero {text-align: center;}
 
 .hero-title {
 margin-top: 0;
@@ -119,10 +122,13 @@ text-align:center;
 text-transform: uppercase;}
 
 
-.button-white {color: var(--white-color);
+.button-white {
+    margin-bottom: 205px;
+    color: var(--white-color);
 cursor: pointer;
 background-color: var(--backgr-blue);
 border: 0 solid transparent;
+
 
 min-width: 200px;
 display: inline-block;
@@ -155,7 +161,7 @@ line-height: 1.14;}
 .section .hidden-title {margin: 0;}
 .section .section-title {margin-top: 0; margin-bottom: 10px;}
 .section .description {margin: 0;}
-.section-features .container {padding-top: 94px; padding-bottom: 94px;}
+.features {padding-top: 94px; padding-bottom: 94px;}
 
 .features .description{
 font-size: 14px;
@@ -172,11 +178,13 @@ width: 270px;}
 
 
 /* Чем мы занимаемся */
-.section-examples {padding-bottom: 94px;}
-.section .we-do {margin-bottom: 71px;}
+
+.ex-list {display: flex; padding-bottom: 94px; padding-top: 50px;}
+
+.ex-list .item.item:not(:last-child) {margin-right: 30px;}
+.section .we-do {margin-bottom: 0;}
 .ex-list .examples {display: block;}
-.we-do {
-    
+.we-do {margin-bottom: 0;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -185,9 +193,10 @@ text-align:center;}
 
 
 /* наша команда */
-.team {background-color: var(--backgr-wdark);
-padding-bottom: 94px;}
+.team {background-color: var(--backgr-wdark);}
 
+.photo-list {display: flex; padding-bottom: 94px;}
+.photo-list .item:not(:last-child) {margin-right: 30px;}
 
 .team .section-title {padding-top: 94px;}
 
@@ -234,15 +243,14 @@ text-decoration: none;}
 
 footer  {background-color: var(--backgr-dark);}
 
-.footer {padding-top: 60px;
-padding-bottom: 60px;}
+.bottom.logo {display:block; padding-top: 60px;}
 .white-logo {color: var(--white-color);}
 .footer-list .link {color: var(--white-dark);
 text-decoration: none;
 font-size: 14px;
 line-height: 1.71px;}
 
-.address {margin-top: 20px;}
+.address {margin-top: 20px; padding-bottom: 60px;}
 .city:hover, .city:focus {color: var(--blue-color);}
 .footer-list .link:hover, .footer-list .link:focus {color: var(--blue-color);}
 
