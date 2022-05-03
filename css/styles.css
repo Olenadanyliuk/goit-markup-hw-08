@@ -4,6 +4,8 @@
 --white-color: rgba(255, 255, 255, 1); 
 --white-dark: rgba(255, 255, 255, 0.6);
 --black-logo: rgba(0, 0, 0, 1);
+--white: rgba(255, 255, 255, 1);
+
 
 --backgr-white: #FFFFFF;
 --backgr-dark: #2F303A;
@@ -47,9 +49,9 @@ padding-right: 15px;
 margin-right: auto;
 margin-left: auto;}
 
-/* хедер */
+/* хедер
 .header {padding-top: 24px;
-padding-bottom: 25px;}
+padding-bottom: 25px;}*/
 
 
 
@@ -62,14 +64,21 @@ font-family: Raleway, sans-serif;
 font-size: 26px;
 line-height: 1.19;}
 
-.top.logo {text-decoration: none;
+.top.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    text-decoration: none;
 }
 
 /* Навигация */
 .nav {display: flex; 
 margin-left: 93px;}
+
 .contacts {display: flex; align-items: center;
-margin-left: auto;}
+margin-left: auto;
+padding-top: 32px;
+padding-bottom: 32px;}
+
 .flex-header {display: flex; align-items: center;}
 .header-container {display: flex;}
 
@@ -77,7 +86,7 @@ margin-left: auto;}
 .contacts, .nav {margin-top: 0; margin-bottom: 0; padding-left: 0;}
 
 .nav .item:not(:last-child) {margin-right: 50px;}
-.contacts .item:not(:last-child) {margin-right: 50px;}
+.contacts .item:not(:last-child) {margin-right: 30px;}
 
 .nav .link {color: var(--title-text-color);
 font-weight: 500;
@@ -92,12 +101,41 @@ display: block;}
 .nav .link.current {color: var(--blue-color);}
 
 /* Телефон, имейл */
+
+
+
+
 .contacts .link {color: var(--primary-text-color);
 text-decoration: none;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-font-weight: 500;
+font-weight: 500;}
+
+/*  ИКОНКИ: имейл, телефон */
+.contacts .item::before {
+    display: inline-block;
+content: "";
+margin-right: 10px;
+background-position: center;
+
+}
+
+
+
+
+
+.icon-envelope::before {background-image: url(../images/svg/envelope.svg);
+height: 12px;
+width: 16px;
+background-size: contain;
+}
+
+
+.icon-phone:before {background-image: url(../images/svg/smartphone.svg);
+height: 16px;
+width: 10px;
+background-size: 10px;
 }
 
 .contacts .link:hover, .contacts .link:focus {color: var(--blue-color);}
@@ -212,12 +250,17 @@ line-height: 1.71;}
 
 
 .features .item {
-width: 270px;}
+width: 270px;
+}
 
 .features .item::before {display: block;
     content: "";
     height: 120px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+background-color: var(--backgr-wdark);
+background-repeat: no-repeat;
+background-position: center;
+}
 
 
 .icon.feature-one::before {
@@ -260,7 +303,6 @@ text-align:center;}
 .team {background-color: var(--backgr-wdark);
 padding-top: 94px;
 padding-bottom: 94px;
-
 }
 
 .photo-list {display: flex; }
@@ -275,35 +317,93 @@ border-bottom-left-radius: 4px;}
 
 .person {padding-top: 30px;
 padding-bottom: 30px;
-   
-    background-color: var(--backgr-white);
+background-color: var(--backgr-white);
 text-align: center;}
 
 
 
 .team .section-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
 text-align:center;}
 
 .photo {display: block;}
 
 .name {margin-top: 0;
-    margin-bottom: 10px;
+margin-bottom: 10px;
    
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;}
 
 .position {margin-top: 0;
-margin-bottom: 0;}
+margin-bottom: 16px;}
 
 .person .position {
-    font-size: 16px;
-    line-height: 1.19;}
+font-size: 16px;
+line-height: 1.19;}
 
+/*ФОНОВЫЕ РИСУНКИ - НАША КОМАНДА*/
+.social-links {display:flex;
+}
+.instagram {
+display: inline-block;
+height: 44px;
+width: 44px;
+background-image:url(../images/svg/instagram.svg);
+background-size: 20px;
+background-repeat: no-repeat;
+background-color: red;
+background-position: center;
+border-radius: 50%;
+}
+
+.twitter {
+display: inline-block;
+height: 44px;
+width: 44px;
+background-image:url(../images/svg/twitter.svg);
+background-size: 20px;
+background-repeat: no-repeat;
+background-color: red;
+background-position: center;
+border-radius: 50%;
+
+}
+
+
+.facebook {
+display: inline-block;
+height: 44px;
+width: 44px;
+background-image:url(../images/svg/facebook.svg);
+background-size: 10px;
+background-repeat: no-repeat;
+background-color: red;
+background-position: center;
+border-radius: 50%;
+
+}
+
+
+.linkedin {
+display: inline-block;
+height: 44px;
+width: 44px;
+background-image:url(../images/svg/linkedin.svg);
+background-size: 20px;
+background-repeat: no-repeat;
+background-color: red;
+background-position: center;
+border-radius: 50%;
+}
+
+.social-links {padding-right :32px; padding-left: 32px;}
+.social-links .item:not(:last-child) {
+    margin-right: 10px;
+}
 
 
 /* футер */
@@ -347,9 +447,31 @@ font-style: normal;}
 
 
 
+.footer-flex {
+    display: flex;
+}
+
+.invite {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; 
+    color: var(--white);
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.connect {margin-left: 70px;
+    
+}
 
 
-
+.footer.social-links {padding-right: 0;
+padding-left: 0;
+padding-top: 0;
+padding-bottom: 0;
+margin-top: 0;
+margin-bottom: 0;}
 
 
 
