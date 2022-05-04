@@ -14,6 +14,7 @@
 --backgr-darkblue: #188CE8;
 --backgr-hero: #C4C4C4;
 --social-links-grey: rgba(255, 255, 255, 0.1);
+--backgr-features: #F5F4FA;
 }
 
 
@@ -122,8 +123,7 @@ font-weight: 500;}
 
 
 
-.contacts .link:hover, .contacts .link:focus {color: var(--blue-color);
-}
+
 
 header {
     border-bottom: 1px solid #ECECEC;
@@ -131,22 +131,32 @@ header {
 
 
 /*  ИКОНКИ: имейл, телефон */
-.contacts .item::before {display: inline-block;
-content: "";
+
+.icon-envelope {
+    
+    display: inline-block;
+    height: 12px;
+    width: 16px;
+    background-image:url(../images/svg/envelope.svg);
 margin-right: 10px;
 background-position: center;
 }
 
-.icon-envelope::before {background-image: url(../images/svg/envelope.svg);
-height: 12px;
-width: 16px;
-background-size: contain;
-}
+.contacts .icon-envelope:hover, .contacts .icon-envelope:focus, .contacts .link:hover, .contacts-link:focus, .contacts .icon-phone:hover,
+.contacts .icon-phone:focus {
+    color: var(--blue-color);}
 
-.icon-phone:before {background-image: url(../images/svg/smartphone.svg);
+.icon-phone {
+    display: inline-block;
 height: 16px;
 width: 10px;
-background-size: contain;}
+background-image:url(../images/svg/smartphone.svg);
+margin-right: 10px;
+background-size: contain;
+background-position: bottom;
+
+}
+
 
 
 
@@ -250,46 +260,40 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;}
 
+
 .section .hidden-title {margin: 0;}
 .section .section-title {margin-top: 0; margin-bottom: 10px;}
-.section .description {margin: 0;}
+.section .description {margin: 0;} 
 
 
 .features .description{
 font-size: 14px;
 line-height: 1.71;}
 
+.feature .section-title {margin-top: 30px;
 
-.features .item {
-width: 270px;
 }
+
 
 /*секция Особенности ФОНОВЫЕ КАРТИНКИ*/
-.features .item::before {display: block;
-content: "";
-width: 270px;
-height: 120px;
-margin-bottom: 30px;
-border-radius: 4px;
-background-color: var(--backgr-wdark);
-background-repeat: no-repeat;
-background-position: center;
+.icon { 
+    width: 270px;
+    height: 120px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--backgr-features);
+    border-radius: 4px;
 }
 
-.icon.feature-one::before {
-    background-image: url(../images/svg/feature1.svg);}
-
-.icon.feature-two::before {
-    background-image: url(../images/svg/feature2.svg);
-}
-.icon.feature-three::before {
-    background-image: url(../images/svg/feature3.svg);
-}
-.icon.feature-four::before {
-    background-image: url(../images/svg/feature4.svg);
+.feature-one {background-image: url(../images/svg/feature1.svg);}
+.feature-two {background-image: url(../images/svg/feature2.svg);}
+.feature-three {background-image: url(../images/svg/feature3.svg);}
+.feature-four {background-image: url(../images/svg/feature4.svg);
 }
 
-.features .icon:not(:last-child) {margin-right: 30px;
+
+.feature:not(:last-child) {margin-right: 30px;
 }
 
 
