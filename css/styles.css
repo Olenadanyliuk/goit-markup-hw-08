@@ -25,7 +25,7 @@ color: var(--primary-text-color);
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;}
 
-.footer-list, .contacts, .nav, .features, .photo-list, .ex-list, .button, .portfolio, .social-links, .clients-list .link {list-style: none;}
+.footer-list, .contacts, .nav, .features, .photo-list, .ex-list, .button, .portfolio, .social-links, .clients-list .link, .white-links {list-style: none;}
 .footer-list, .contacts, .nav, .features, .photo-list, .ex-list {padding: 0; margin: 0;}
 
 
@@ -270,30 +270,26 @@ line-height: 1.14;}
 font-size: 14px;
 line-height: 1.71;}
 
-.feature .section-title {margin-top: 30px;
+.features .section-title {margin-top: 30px;
 
 }
 
 
 /*секция Особенности ФОНОВЫЕ КАРТИНКИ*/
-.icon { 
-    width: 270px;
-    height: 120px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.feature-back {
+    
     background-color: var(--backgr-features);
     border-radius: 4px;
 }
 
-.feature-one {background-image: url(../images/svg/feature1.svg);}
-.feature-two {background-image: url(../images/svg/feature2.svg);}
-.feature-three {background-image: url(../images/svg/feature3.svg);}
-.feature-four {background-image: url(../images/svg/feature4.svg);
+.feature-icon {
+margin: 25px 100px;
+
 }
 
 
-.feature:not(:last-child) {margin-right: 30px;
+.features .item:not(:last-child) {margin-right: 30px;
 }
 
 
@@ -369,72 +365,44 @@ line-height: 1.19;}
 /*ФОНОВЫЕ РИСУНКИ - НАША КОМАНДА*/
 .social-links {display:flex;
 }
-.instagram {
-display: inline-block;
-height: 44px;
-width: 44px;
-background-image:url(../images/svg/instagram.svg);
-background-color: var(--backgr-white);
-background-size: 20px;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 50%;
-}
-
-.twitter {
-display: inline-block;
-height: 44px;
-width: 44px;
-background-image:url(../images/svg/twitter.svg);
-background-color: var(--backgr-white);
-background-size: 20px;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 50%;
-}
-
-
-.facebook {
-display: inline-block;
-height: 44px;
-width: 44px;
-background-image:url(../images/svg/facebook.svg);
-background-color: var(--backgr-white);
-background-size: 10px;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 50%;
-}
-
-
-.linkedin {
-display: inline-block;
-height: 44px;
-width: 44px;
-background-image:url(../images/svg/linkedin.svg);
-background-color: var(--backgr-white);
-background-size: 20px;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 50%;
-}
-
-.social-links {padding-right :32px; padding-left: 32px;}
-
 
 .social-links .link:not(:last-child) {
     margin-right: 10px;
 }
 
+.social-links .item {display: flex;
+    
+    background-color: var(--backgr-white);
+    border-radius: 50%;
+    color: rgba(175, 177, 184, 1);
+}
+
+.link .instagram, .link .twitter, .link .facebook, .link .linkedin {
+    margin: 12px;
+    fill: currentColor;
+}
+
+.person .item:hover {background-color: #2196F3;
+    color:#FFFFFF;
+
+}
 
 
+.person .social-links {padding-right :32px; padding-left: 32px;}
+
+
+
+
+
+
+
+/* КЛИЕНТЫ*/
 .section-clients {padding-top: 94px;
     padding-bottom: 94px;
 }
 .clients-list {display: flex;
 margin-top: 0;
 margin-bottom: 0;
-
 }
 
 
@@ -449,95 +417,39 @@ margin-bottom: 0;
 }
 
 
-.clients-list {padding-right: 0; padding-left: 0;}
+.clients-list {padding-left: 0; padding-right: 0;}
 .clients-list .link:not(:last-child) {
 margin-right: 30px;
+color: rgba(175, 177, 184, 1);
 }
 
-.client-one {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client1.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-border: 1px solid var(--grey-border);
+
+
+.clients-list .item {display: flex;
+width: 170px;
+height: 92px;
 box-sizing: border-box;
 border-radius: 4px;
+border: 1px solid #AFB1B8;
+color: rgba(175, 177, 184, 1);
 }
 
 
-.client-two {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client2.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid var(--grey-border);
-    box-sizing: border-box;
-    border-radius: 4px;
+
+.client-one, .client-two, .client-three, .client-four, .client-five, .client-six {
+   text-align: center;
+    margin: 16px 32px;
+fill: currentColor;}
+    
+
+
+.clients-list .item:hover 
+{border-color: rgba(33, 150, 243, 1); 
+    color: rgba(33, 150, 243, 1);
 }
 
-.client-three {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client3.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid var(--grey-border);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
 
-.client-four {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client4.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid var(--grey-border);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
 
-.client-five {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client5.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid var(--grey-border);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-.client-six {
-    display: inline-block;
-    height: 92px;
-    width: 170px;
-    background-image: url(../images/svg/client6.svg);
-    background-size: 41px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid var(--grey-border);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
 
 
 
@@ -568,6 +480,8 @@ text-decoration: none;}
 .footer  {background-color: var(--backgr-dark);
 padding-top: 60px;
 padding-bottom: 60px;}
+
+
 
 .bottom.logo {display:block; 
 margin-bottom: 20px;
@@ -606,77 +520,47 @@ font-style: normal;}
     margin-top: 12px;
 }
 
-.social-links .link:not(:last-child) {margin-right: 10px;
+.white-link:not(:last-child) {margin-right: 10px;
 }
 
 
-.white-instagram {
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    background-image: url(../images/svg/instawhite.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-color: var(--social-links-grey);
-    background-position: center;
+.white-links {padding-left: 0;}
+.white-links {display: flex;}
+
+.white-links .white-item {
+    display: block;
+background-color: var(--social-links-grey);
     border-radius: 50%;
+  
+}
+
+.white-link .white-instagram,
+.white-link .white-twitter,
+.white-link .white-facebook,
+.white-link .white-linkedin {
+    margin: 12px;
+    fill:  #FFFFFF;
 }
 
 
-.white-instagram:hover, .white-twitter:hover, .white-facebook:hover, .white-linkedin:hover {background-color: var(--backgr-blue);}
-
-
-
-.white-twitter {
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    background-image: url(../images/svg/twitterwhite.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-color: var(--social-links-grey);
-    background-position: center;
-    border-radius: 50%;
-
+.white-links .white-item:hover {
+    background-color: #2196F3;
+    
 }
 
 
-.white-facebook {
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    background-image: url(../images/svg/facebookwhite.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-color: var(--social-links-grey);
-    background-position: center;
-    border-radius: 50%;
-}
 
 
-.white-linkedin {
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    background-image: url(../images/svg/linkedinwhite.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-color: var(--social-links-grey);
-    background-position: center;
-    border-radius: 50%;
-    }
+
+
+
+
+
+
 
 
 /* ДИВ в футере - присоединяйтесь*/
 .connect {margin-left: 70px;}
-
-
-.footer.social-links {padding-right: 0;
-padding-left: 0;
-padding-top: 0;
-padding-bottom: 0;
-margin-top: 0;
-margin-bottom: 0;}
 
 
 
