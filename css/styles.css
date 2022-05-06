@@ -85,13 +85,13 @@ padding-bottom: 10px;}
 /* ЕМЕЙЛ + ТЕЛЕФОН*/
 .contacts {display: flex; align-items: center;
 margin-left: auto;
-padding-top: 32px;
-padding-bottom: 32px;}
+}
 
 
 /*ФЛЕКС-КОНТЕЙНЕРИ*/
 .flex-header {display: flex; align-items: center;}
-.header-container {display: flex;}
+.header-container {display: flex;
+align-items: center;}
 
 
 
@@ -131,7 +131,7 @@ padding-bottom: 10px;}
 /*  ИКОНКИ: имейл, телефон */
 .envelope, .smartphone {margin-right: 10px;}
 
-.contacts .link {
+.contacts .link {display: flex;
     align-items: center;
 justify-content: center; }
 
@@ -253,7 +253,7 @@ padding-bottom: 94px;
 .features .section-title {
 font-weight: 700;
 font-size: 14px;
-line-height: 1.14;}
+line-height: 1.142;}
 
 
 .section .hidden-title {margin: 0;}
@@ -263,7 +263,7 @@ line-height: 1.14;}
 
 .features .description{
 font-size: 14px;
-line-height: 1.71;}
+line-height: 1.714;}
 
 .features .section-title {margin-top: 30px;
 
@@ -272,8 +272,9 @@ line-height: 1.71;}
 
 /*секция Особенности ФОНОВЫЕ КАРТИНКИ*/
 
-.feature-back {
-    
+.feature-back {display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--backgr-features);
     border-radius: 4px;
 }
@@ -367,7 +368,7 @@ line-height: 1.19;}
     margin-right: 10px;
 }
 
-.social-links .item {display: block;
+.social-links .item {display: flex;
     
     background-color: var(--backgr-white);
     border-radius: 50%;
@@ -472,10 +473,12 @@ text-decoration: none;}
 
 
 .footer  {background-color: var(--backgr-dark);
+}
+
+.logo-address {
 padding-top: 60px;
-padding-bottom: 60px;}
-
-
+padding-bottom: 60px;
+}
 
 .bottom.logo {display:block; 
 margin-bottom: 20px;
@@ -495,13 +498,14 @@ line-height: 1.71px;}
 .city:hover, .city:focus {color: var(--blue-color);}
 .footer-list .link:hover, .footer-list .link:focus {color: var(--blue-color);}
 
-.footer-list .link, .city {font-family: 'Roboto';
+.footer-list .link, .city, address .link {font-family: 'Roboto';
 font-style: normal;}
 
 
 
 .footer-flex {
     display: flex;
+    align-items: center;
 }
 
 .invite {
@@ -511,18 +515,24 @@ font-style: normal;}
     color: var(--white);
     vertical-align: top;
     margin-bottom: 20px;
-    margin-top: 12px;
+    margin-top: 0px;
 }
 
 .white-link:not(:last-child) {margin-right: 10px;
 }
 
 
-.white-links {padding-left: 0;}
-.white-links {display: flex;}
+
+.white-links {display: flex;
+    align-items: center;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+    }
+
+.white-item {display: flex;}
 
 .white-links .white-item {
-    display: block;
 background-color: var(--social-links-grey);
     border-radius: 50%;
   
@@ -554,7 +564,9 @@ background-color: var(--social-links-grey);
 
 
 /* ДИВ в футере - присоединяйтесь*/
-.connect {margin-left: 70px;}
+.connect {margin-left: 70px;
+padding-top: 72px;
+    padding-bottom: 100px}
 
 
 
