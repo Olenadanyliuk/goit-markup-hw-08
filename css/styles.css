@@ -78,6 +78,8 @@ line-height: 1.19;}
 .nav {display: flex; 
 margin-left: 93px;}
 
+.nav .link {padding-top: 10px;
+padding-bottom: 10px;}
 
 
 /* ЕМЕЙЛ + ТЕЛЕФОН*/
@@ -108,7 +110,7 @@ letter-spacing: 0.02em;
 text-decoration: none;
 display: block;}
 
-.nav .link:hover, .nav a:focus {color: var(--blue-color);}
+.nav .link:hover, .nav .link:focus {color: var(--blue-color);}
 .nav .link.current {color: var(--blue-color);}
 
 
@@ -119,8 +121,28 @@ text-decoration: none;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-font-weight: 500;}
+font-weight: 500;
+padding-top: 10px;
+padding-bottom: 10px;}
 
+.contacts .link {display: flex;}
+
+
+/*  ИКОНКИ: имейл, телефон */
+.envelope, .smartphone {margin-right: 10px;}
+
+.contacts .link {
+    align-items: center;
+justify-content: center; }
+
+.contacts .link:hover {
+    color: var(--backgr-blue);}
+
+.contacts .link:focus {
+    color: var(--backgr-blue);
+}
+    
+.contacts .envelope, .contacts .smartphone {fill: currentColor;}
 
 
 
@@ -130,38 +152,11 @@ header {
 }
 
 
-/*  ИКОНКИ: имейл, телефон */
-
-.icon-envelope {
-    
-    display: inline-block;
-    height: 12px;
-    width: 16px;
-    background-image:url(../images/svg/envelope.svg);
-margin-right: 10px;
-background-position: center;
-}
-
-.contacts .icon-envelope:hover, .contacts .icon-envelope:focus, .contacts .link:hover, .contacts-link:focus, .contacts .icon-phone:hover,
-.contacts .icon-phone:focus {
-    color: var(--blue-color);}
-
-.icon-phone {
-    display: inline-block;
-height: 16px;
-width: 10px;
-background-image:url(../images/svg/smartphone.svg);
-margin-right: 10px;
-background-size: contain;
-background-position: bottom;
-
-}
 
 
 
 
 
-  
 /* цвет заголовков */
 .section-title, .portfolio-title, .name {color: var(--title-text-color); }
 
@@ -318,7 +313,9 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.photo-list {display: flex; }
+.photo-list {display: flex; 
+justify-content: center;
+align-items: center;}
 
 
 .photo-list .item:not(:last-child) {margin-right: 30px;}
@@ -370,7 +367,7 @@ line-height: 1.19;}
     margin-right: 10px;
 }
 
-.social-links .item {display: flex;
+.social-links .item {display: block;
     
     background-color: var(--backgr-white);
     border-radius: 50%;
@@ -382,9 +379,8 @@ line-height: 1.19;}
     fill: currentColor;
 }
 
-.person .item:hover {background-color: #2196F3;
+.person .item:hover, .person .item:focus {background-color: #2196F3;
     color:#FFFFFF;
-
 }
 
 
@@ -426,11 +422,9 @@ color: rgba(175, 177, 184, 1);
 
 
 .clients-list .item {display: flex;
-width: 170px;
-height: 92px;
 box-sizing: border-box;
 border-radius: 4px;
-border: 1px solid #AFB1B8;
+outline: 1px solid #AFB1B8;
 color: rgba(175, 177, 184, 1);
 }
 
@@ -443,8 +437,8 @@ fill: currentColor;}
     
 
 
-.clients-list .item:hover 
-{border-color: rgba(33, 150, 243, 1); 
+.clients-list .item:hover, .clients-list .item:focus
+{outline-color: rgba(33, 150, 243, 1); 
     color: rgba(33, 150, 243, 1);
 }
 
@@ -543,7 +537,7 @@ background-color: var(--social-links-grey);
 }
 
 
-.white-links .white-item:hover {
+.white-links .white-item:hover, .white-links .white-item:focus {
     background-color: #2196F3;
     
 }
@@ -637,7 +631,6 @@ margin-top: 50px}
 .img {display: block;}
 
 .portfolio .link {
-width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;}
 
