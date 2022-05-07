@@ -248,7 +248,9 @@ padding-bottom: 94px;
 }
 
 
-.features {display:flex;}
+.features {display:flex;
+align-items: center;
+justify-content: center;}
 
 .features .section-title {
 font-weight: 700;
@@ -653,8 +655,6 @@ margin-bottom: 30px;}
 }
 
 
-.portfolio .item {text-decoration: none;}
-
 
 
 
@@ -688,7 +688,13 @@ font-weight: 700;
     padding-bottom: 0;
     margin-top: 0;
 font-size: 16px;
-line-height: 1.88;}
+line-height: 1.88;
+color: var(--primary-text-color);
+}
+
+.portfolio .item {text-decoration: none;
+    font-style: normal;
+}
 
 
 
