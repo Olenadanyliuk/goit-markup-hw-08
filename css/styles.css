@@ -299,12 +299,9 @@ text-align:center;}
 
 .wedo-thumb {
     position: relative;
-    
-    
 }
 
 .wedo-subtitle {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -721,7 +718,13 @@ width: 100%;
 height: 294px;
 left: 0;
 bottom: 0;
-background-color: rgba(33, 150, 243, 0.9);}
+padding: 63px 24px;
+background-color: rgba(33, 150, 243, 0.9);
+opacity: 0;}
+
+
+ .portfolio .item:focus .portf-subtitle {opacity: 1;}
+.portfolio .item:hover .portf-subtitle {opacity: 1;}
 
 
 .portf-name {
