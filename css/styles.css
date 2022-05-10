@@ -335,7 +335,7 @@ text-align:center;}
     height: 70px;
     bottom: 0;
     left: 0;
-background: rgba(47, 48, 58, 0.8);}
+background-color: rgba(47, 48, 58, 0.8);}
 
 
     .wedo-name {
@@ -765,33 +765,24 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
  .portfolio .item:focus .portf-subtitle, .portfolio .item:hover .portf-subtitle {
-     opacity: 1;}
-
-.portfolio .item:focus .portf-subtitle,
-.portfolio .item:hover .portf-subtitle {
-transform: translateY(0);
-}
+     opacity: 1; transform: translateY(0);}
 
 
+/*МОДАЛЬНОЕ ОКНО*/
+     .backdrop {position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    }
 
 
-
-/* почти черный цвет rgba(33,33, 33, 1) */
-
-/* серый ОСНОВНОЙ rgba(117, 117, 117, 1)*/
-
-/*белый rgba(255, 255, 255, 1)*/
-
-/* фон голубой #2196F3 */
-
-/* вторичный фон  #F5F4FA */
-
-/* ОСНОВНОЙ фон  #E5E5E5*/
-
-/* серый цвет логотипа rgba(0, 0, 0, 1) */
-
-/* синий цвет логотипа rgba(33, 150, 243, 1) */
-
-/* голубой цвет наведения: rgba(33, 150, 243, 1);*/
-
-/* цвет фона темный rgba(47, 48, 58, 1)*/
+ .modal {position: absolute;
+    min-width: 528px;
+    min-height: 581px;
+    top: 50%;
+     left: 50%;
+background-color: var(--backgr-white);
+transform: translate(-50%, -50%);
+ }
