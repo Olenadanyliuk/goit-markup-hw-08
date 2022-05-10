@@ -81,13 +81,11 @@ margin-right: 93px;}
 .nav {display: flex; 
     margin-inline-start: 0;}
 
-.nav .item {padding-top: 32px;
-    padding-bottom: 32px;}
+
 
 /* ЕМЕЙЛ + ТЕЛЕФОН*/
 .contacts {display: flex; align-items: center;
-    padding-top: 32px;
-        padding-bottom: 32px;
+  
 margin-left: auto;
 }
 
@@ -113,8 +111,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
-
-
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 
@@ -150,7 +148,12 @@ letter-spacing: 0.02em;
 font-weight: 500;
 display: flex;
 align-items: center;
-    }
+padding-top: 32px;
+    padding-bottom: 32px;
+ }
+
+
+
 
 .contacts .link:hover, .contacts .link:focus {
     color: var(--backgr-blue);
@@ -158,7 +161,8 @@ align-items: center;
 
 
 /*  ИКОНКИ: имейл, телефон */
-.envelope, .smartphone {margin-right: 10px;}
+.envelope, .smartphone {
+    margin-right: 10px;}
 
     
 .contacts .envelope, .contacts .smartphone {fill: currentColor;}
