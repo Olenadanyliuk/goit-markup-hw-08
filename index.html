@@ -69,7 +69,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button data-open-modal type="button" class="button-white">Заказать услугу</button>
+          <button data-modal-open type="button" class="button-white">Заказать услугу</button>
         </div>
       </section>
 
@@ -500,11 +500,11 @@
 
     <!--МОДАЛЬНОЕ ОКНО-->
 
-    <div class="backdrop data-backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-close-modal class="close-button">
-          <svg class="close" width="18" height="18">
-            <use href="./images/icons.svg#icon-close-black"></use>
+        <button data-modal-close class="close-button">
+          <svg class="close" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
