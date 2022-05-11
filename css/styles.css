@@ -778,6 +778,14 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 
+.backdrop.is-hidden {opacity: 0;
+pointer-events: none;
+
+}
+
+
+
+
  .modal {position: absolute;
     min-width: 528px;
     min-height: 581px;
@@ -786,3 +794,22 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--backgr-white);
 transform: translate(-50%, -50%);
  }
+
+
+ .close-button {display:flex;
+    justify-content: center;
+    align-items: center;
+     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 8px;
+    margin-bottom: 543px;
+    margin-left: 490px;
+    margin-right: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+    
