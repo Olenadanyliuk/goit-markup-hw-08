@@ -749,8 +749,8 @@ left: 0;
 bottom: 0;
 padding: 63px 24px;
 background-color: rgba(33, 150, 243, 0.9);
-opacity: 0;
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -765,7 +765,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
  .portfolio .item:focus .portf-subtitle, .portfolio .item:hover .portf-subtitle {
-     opacity: 1; transform: translateY(0);}
+ transform: translateY(0);}
 
 
 /*МОДАЛЬНОЕ ОКНО*/
