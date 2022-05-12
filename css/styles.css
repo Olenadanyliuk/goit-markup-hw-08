@@ -113,6 +113,7 @@ letter-spacing: 0.02em;
 text-decoration: none;
 padding-top: 32px;
 padding-bottom: 32px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -150,6 +151,7 @@ display: flex;
 align-items: center;
 padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 
@@ -234,7 +236,8 @@ font-family: inherit;
 font-size: 16px;
 line-height: 1.88;
 text-align: center;
-letter-spacing: 0.06em;}
+letter-spacing: 0.06em;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .button-white:hover, .button-white:focus {background-color: var(--backgr-darkblue);}
 
@@ -338,9 +341,7 @@ text-align:center;}
 background-color: rgba(47, 48, 58, 0.8);}
 
 
-    .wedo-name {
-
-
+ .wedo-name {
 font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -416,6 +417,7 @@ line-height: 1.19;}
     background-color: var(--backgr-white);
     border-radius: 50%;
     color: rgba(175, 177, 184, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link .instagram, .link .twitter, .link .facebook, .link .linkedin {
@@ -481,6 +483,7 @@ border: 1px solid #AFB1B8;
 color: rgba(175, 177, 184, 1);
 width: 100%;
 height: 100%;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -511,11 +514,15 @@ fill: currentColor;}
 
 
 /* футер */
-.city {color: var(--white-color);
+.city {
+    font-family: 'Roboto';
+        font-style: normal;
+    color: var(--white-color);
 font-size: 14px;
 line-height: 1.71;
 font-family: inherit;
-text-decoration: none;}
+text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-address {
     align-items: center;
@@ -541,26 +548,35 @@ text-decoration: none;}
 
 .white-logo {color: var(--white-color);}
 
+ address .link {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
 .footer-list .link {    
+    font-family: 'Roboto';
+        font-style: normal;
 color: var(--white-dark);
 text-decoration: none;
 font-size: 14px;
-line-height: 1.71px;}
+line-height: 1.71px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-address .address {
-        font-family: 'Roboto';
-        font-style: normal;
-
+font-family: 'Roboto';
+font-style: normal;
 }
 
 
 .city:hover, .city:focus {color: var(--blue-color);}
 .footer-list .link:hover, .footer-list .link:focus {color: var(--blue-color);}
 
-.footer-list .link, .city, address .link {font-family: 'Roboto';
-font-style: normal;}
 
 
+/* ДИВ в футере - присоединяйтесь*/
+.connect {
+    margin-left: 70px;
+}
 
 
 .invite {
@@ -590,6 +606,7 @@ margin-block-end: 0;
 .white-links .white-item {
 background-color: var(--social-links-grey);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -608,8 +625,6 @@ background-color: var(--social-links-grey);
 
 
 
-/* ДИВ в футере - присоединяйтесь*/
-.connect {margin-left: 70px;}
 
 
 
@@ -652,14 +667,13 @@ font-size: 16px;
 line-height: 1.63;
 text-align:center;
 letter-spacing: 0.03em;
-cursor: pointer;}
+cursor: pointer;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 
 .button .link:not(:last-child) {margin-right: 8px;}
 
-.button-black:hover, .button-black:focus {color: var(--white-color);}
-.button-black:hover, .button-black:focus {background-color: var(--backgr-blue);} 
-
-.button-black:hover, .button-black:focus {
+.button-black:hover, .button-black:focus {color: var(--white-color); background-color: var(--backgr-blue);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);}
 
@@ -680,7 +694,11 @@ margin-top: 50px}
 margin-right: 30px;
 margin-bottom: 30px;}
 
-.portfolio .item {display: inline-block;}
+.portfolio .item {display: inline-block;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+text-decoration: none;
+ font-style: normal;
+}
 
 
 .portfolio .item:hover, .portfolio .item:focus {box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -725,9 +743,7 @@ line-height: 1.88;
 color: var(--primary-text-color);
 }
 
-.portfolio .item {text-decoration: none;
-    font-style: normal;
-}
+
 
 .portfolio-subtitle {
 font-size: 18px;
@@ -749,8 +765,6 @@ left: 0;
 bottom: 0;
 padding: 63px 24px;
 background-color: rgba(33, 150, 243, 0.9);
-
-
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
