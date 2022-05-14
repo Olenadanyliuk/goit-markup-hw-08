@@ -502,13 +502,57 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="close-button">
+     
+
+<form class="form" name="signup_form">
+
+  <button data-modal-close class="close-button">
           <svg class="close" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-      </div>
+
+  <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+  <div class="form-field">
+  <label class="form-label" for="name">Имя</label>
+<input class="form-input" type="text" name="name" id="name" autofocus />
+</div>
+
+<div class="form-field">
+<label class="form-label"  for="tel">Телефон</label>
+<input class="form-input" type="text" name="tel" id="tel" />
+</div>
+
+<div class="form-field">
+<label class="form-label"  for="email">Почта</label>
+<input class="form-input" type="text" name="mail" id="email" />
+</div>
+
+<div class="form-field">
+<label class="form-label form-comment" for="comment">Комментарий</label>
+<textarea class="form-textarea" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+</div>
+
+<div class="form-agreement">
+<input type="checkbox" name="agreement" value="yes"     id="agreement" />
+<label class="form-checkbox"  for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+</div>
+
+
+
+<button type="submit" class="submit-button">Отправить</button>
+
+
+</form>
+
     </div>
+    </div>
+
+
+
+
+
 
     <script src="./js/modal.js"></script>
   </body>
