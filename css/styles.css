@@ -866,7 +866,7 @@ border-bottom-left-radius: 4px;
  }
 
 
- .close__button {position: absolute;
+ .modal__button {position: absolute;
     top: 8px;
     right: 8px;
      display:flex;
@@ -889,7 +889,7 @@ border-bottom-left-radius: 4px;
 
 
 
-.close__button:hover, .close__button:focus {
+.modal__button:hover, .modal__button:focus {
     fill: var(--backgr-blue);
 }
 
