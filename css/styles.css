@@ -26,8 +26,7 @@ margin-bottom: 0;}
 
 img {display: block;}
 
-.footer-list, .header-contacts, .nav-list, .features-list, .team-list, .examples-list, .portfolio-button__list, .portfolio-examples-list, .icon-list, .clients-list {list-style: none;}
-.footer-list, .header-contacts, .nav-list, .features-list, .team-list, .examples-list {padding: 0; margin: 0;}
+.footer-list, .header-contacts, .nav-list, .features-list, .team-list, .examples-list, .portfolio-button__list, .portfolio-examples-list, .icon-list, .clients-list {list-style: none; padding: 0; margin: 0;}
 
 
 
@@ -404,7 +403,7 @@ color: rgba(175, 177, 184, 1);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-list__instagram, .icon-list__twitter, .icon-list__facebook, .icon-list__linkedin {
+.icon-list__icon {
 margin: 12px;
 fill: currentColor;
 }
@@ -578,7 +577,7 @@ background-color: var(--social-links-grey);
 
 
 
-.icon-list__facebook--white, .icon-list__instagram--white, .icon-list__twitter--white, .icon-list__linkedin--white {
+.icon-list__icon--white {
     margin: 12px;
     fill:  #FFFFFF;
 }
@@ -659,7 +658,6 @@ right: 28px;
 top: 13px;
 margin-left: 10px;
 fill:var(--white);
-
 }
 
 
@@ -706,8 +704,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
 
 
 
-
-
 .portfolio-examples-list {display: flex;
 flex-wrap: wrap;
 padding-left: 0;
@@ -745,8 +741,6 @@ text-decoration: none;
 
 
 
-
-
 .portfolio__description
 { padding-left: 24px;
     padding-right: 24px;
@@ -778,7 +772,6 @@ font-size: 16px;
 line-height: 1.88;
 color: var(--primary-text-color);
 }
-
 
 
 
@@ -874,17 +867,12 @@ border-bottom-left-radius: 4px;
 
 
 
-
-
-
 .modal__button:hover, .modal__button:focus {
     fill: var(--blue-color);
 }
 
 /* ФОРМА*/
-
-
-   
+  
     
 .form__title {display: block;
 font-weight: 700;
@@ -966,7 +954,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 
-
 .form-agreement {display: flex;
 align-items: baseline;
 margin-top: 20px;
@@ -977,7 +964,6 @@ align-items: center;
 
 .form-agreement__conditions { color:var(--blue-color);
 }
-
 
 
     .form-agreement__label {display: flex;
