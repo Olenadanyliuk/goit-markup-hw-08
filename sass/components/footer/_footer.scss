@@ -1,0 +1,14 @@
+.footer {
+background-color: $backgr-dark;
+padding-top: 60px;
+padding-bottom: 60px;
+
+&-flex {
+display: flex;
+align-items: baseline;
+}
+
+
+&-block {
+align-items: center;}
+}
