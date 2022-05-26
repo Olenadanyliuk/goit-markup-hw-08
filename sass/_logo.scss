@@ -1,8 +1,8 @@
 .logo__text {
     color: $blue-color;
     font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
 
 
     &--black {
@@ -15,10 +15,16 @@
     }
 }
 
+.logo {padding-top: 16px;
+padding-bottom: 16px;}
 
 
 .logo__link {
     display: block;
     text-decoration: none;
-    margin-right: 93px;
 }
+
+
+
+
+   
