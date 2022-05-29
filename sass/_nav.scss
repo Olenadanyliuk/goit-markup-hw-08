@@ -6,7 +6,7 @@ justify-content: space-between;
 
 .menu-button {
     top: 10px;
-    right: 10px;
+    left: 425px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ justify-content: space-between;
 }
 
 .menu-button {position: fixed;
-z-index: 10;}
+z-index: 1;}
 
 .menu-button .icon-cross {display: none;}
 

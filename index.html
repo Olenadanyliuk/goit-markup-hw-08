@@ -22,76 +22,84 @@
     <!--Хедер-->
     <header class="header">
       <div class="container header-container">
-
-       
-
-
-<div class="mobile-menu">
+        <div class="mobile-menu">
           <span class="logo">
             <a class="logo__link" href="#studio"
               ><span class="logo__text" lang="en">Web</span
-              ><span class="logo__text logo__text--black" lang="en">Studio</span></a>
+              ><span class="logo__text logo__text--black" lang="en">Studio</span></a
+            >
           </span>
-<button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button aria-controls="menu-container">
-  <svg width="40" height="40" aria-label="переключатель меню">
-    <use class="icon-menu" href="./images/icons.svg#close-menu"></use>
-  <use class="icon-cross"  href="./images/icons.svg#menu">
-  </use>
-</svg>
-</button>
-</div>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="переключатель меню">
+              <use class="icon-menu" href="./images/icons.svg#close-menu"></use>
+              <use class="icon-cross" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
 
+        <div class="menu-container" data-menu id="menu-container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#studio" class="nav-list__link nav-list__link--current">Студия</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html#portfolio" target="_blank" class="nav-list__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="#contacts" class="nav-list__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-
-<div class="menu-container" data-menu id="menu-container">
-   <nav class="nav">
-<ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="#studio" class="nav-list__link nav-list__link--current">Студия</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html#portfolio" target="_blank" class="nav-list__link"
-                >Портфолио</a
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link tel" href="tel:+380961111111">
+                <svg class="header-contacts__smartphone" width="16px" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
               >
             </li>
-            <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
+
+            <li class="header-contacts__item">
+              <a class="header-contacts__link mail" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__envelope" width="16px" height="16px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>info@devstudio.com</a
+              >
+            </li>
           </ul>
 
- </nav>
-
-
-
-        <ul class="header-contacts">
-
- <li class="header-contacts__item">
-            <a class="header-contacts__link tel" href="tel:+380961111111">
-              <svg class="header-contacts__smartphone" width="16px" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-            >
-          </li>
-
-
-          <li class="header-contacts__item">
-            <a class="header-contacts__link mail" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__envelope" width="16px" height="16px">
-                <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-          </li>
-        </ul>
-
-
-
-<ul class="header-social-list">
-  <li class="header-social-list__item"><a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-<li class="header-social-list__item"> <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-<li class="header-social-list__item"> <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-<li class="header-social-list__item"> <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-
-</ul>
-
-</div>
-
-
-
+          <ul class="header-social-list">
+            <li class="header-social-list__item">
+              <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-social-list__item">
+              <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="header-social-list__item">
+              <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="header-social-list__item">
+              <a class="header-social-list__link" href="" target="_blank" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -225,10 +233,11 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/team/demianenko.jpg"
+                srcset="./images/team/Demyan_mob_1.jpg 1x, ./images/team/Demyan_mob_2.jpg 2x"
+                src="./images/team/Demyan_mob_1.jpg"
                 class="team__photo"
                 alt="Игорь Демьяненко"
-                width="270"
+                width="450"
               />
               <div class="team__member">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
@@ -271,11 +280,11 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/team/repina.jpg"
+              <img  srcset="./images/team/Repina_mob_1.jpg 1x,./images/team/Repina_mob_2.jpg 2x"
+                src="./images/team/Repina_mob_1.jpg"
                 class="team__photo"
                 alt="Ольга Репина"
-                width="270"
+                width="450"
               />
               <div class="team__member">
                 <h3 class="team__subtitle">Ольга Репина</h3>
@@ -319,10 +328,11 @@
 
             <li class="team-item">
               <img
-                src="./images/team/tarasov.jpg"
+  srcset="./images/team/Tarasov_mob_1.jpg 1x,./images/team/Tarasov_mob_2.jpg 2x"
+                src="./images/team/Tarasov_mob_1.jpg"
                 class="team__photo"
                 alt="Николай Тарасов"
-                width="270"
+                width="450"
               />
               <div class="team__member">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
@@ -365,10 +375,11 @@
 
             <li class="team-item">
               <img
-                src="./images/team/ermakov.jpg"
+  srcset="./images/team/Ermakov_mob_1.jpg 1x,./images/team/Ermakov_mob_2.jpg 2x"
+                src="./images/team/Ermakov_mob_1.jpg"
                 class="team__photo"
                 alt="Михаил Ермаков"
-                width="270"
+                width="450"
               />
               <div class="team__member">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
@@ -476,7 +487,7 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-block">
-          <span class="logo">
+          <span class="logo logo-footer">
             <a class="logo__link" href="#studio"
               ><span class="logo__text" lang="en">Web</span
               ><span class="logo__text logo__text--white" lang="en">Studio</span></a
@@ -658,7 +669,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span
+              <span class="form-agreement__agree"
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="form-agreement__conditions" href=""> Условия договора</a></span
               >

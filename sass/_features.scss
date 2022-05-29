@@ -1,0 +1,40 @@
+.features {
+padding-top: 60px;
+padding-bottom: 60px;
+
+
+
+&__description {
+font-size: 14px;
+line-height: 1.714;
+}
+
+&__subtitle {
+    text-align: center;
+color: $title-text-color;
+margin-top: 30px;
+margin-bottom: 10px;
+}}
+
+
+
+.features-block {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: $backgr-wdark;
+border-radius: 4px;
+
+min-height: 120px;
+
+
+&__title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.142;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+}
+
+.features__item:not(:first-child) {margin-top: 30px;}
