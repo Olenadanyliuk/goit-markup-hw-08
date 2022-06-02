@@ -3,7 +3,6 @@ padding-top: 60px;
 padding-bottom: 60px;
 
 
-
 &__description {
 font-size: 14px;
 line-height: 1.714;
@@ -15,7 +14,6 @@ color: $title-text-color;
 margin-top: 30px;
 margin-bottom: 10px;
 }}
-
 
 
 .features-block {
@@ -38,3 +36,30 @@ margin-bottom: 10px;
 }
 
 .features__item:not(:first-child) {margin-top: 30px;}
+
+
+.features-list {
+ @media screen and (min-width: 768px)  
+
+ {display: flex;
+flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;}}
+
+
+
+ .features__item {
+     @media screen and (min-width: 768px) {
+flex-basis: calc((100% - 2*30px)/2);
+}
+&:not(:first-child) {
+    margin-top: 0;
+
+}}
+
+.features__subtitle {
+    @media screen and (min-width: 768px) {
+       text-align: start;
+    }}
