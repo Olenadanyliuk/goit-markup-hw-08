@@ -65,17 +65,24 @@ flex-wrap: wrap;
 
  .features__item {
      @media screen and (min-width: 768px) {
-flex-basis: calc((100% - 2*30px)/2);
+flex-basis: calc((100% - 30px)/2);
 }
 &:not(:first-child) {
     margin-top: 0;
 }}
 
-
- .features__item {
  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3*30px)/4);}
+ .features__item {
+ flex-basis: calc((100% - 3*30px)/4)}}
+
+
+ @media screen and (min-width: 768px) {
+     .features__item:not(:last-child) {
+         margin-bottom: 0;
+     }
  }
+
+
 
 
  .features__subtitle {
