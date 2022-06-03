@@ -123,6 +123,18 @@ border-color: $blue-color;}
 }
 
 
+
+
+    @media screen and (min-width: 1200px) {
+        .form-name__input {width: 448px;}
+         .form-phone__input {width: 448px;}
+.form-email__input {width: 448px;}
+.form__textarea {   width: 448px;   }
+    }
+
+
+
+
 .form-agreement {
 display: flex;
 align-items: baseline;

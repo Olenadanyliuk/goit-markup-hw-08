@@ -72,5 +72,10 @@ line-height: 1.19;
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
+   }
 
+   .team-item {
+       @media screen and (min-width: 1200px) {
+           flex-basis: calc((100% - 3*30px)/4);
+       }
    }

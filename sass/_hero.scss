@@ -13,9 +13,8 @@
     background-size: cover;
     background-position: center;
 background-image: linear-gradient(to left, $gradient, $gradient), url("../images/hero/Header480.jpg");}
-  @media screen and (min-resolution: 2dppx) {
-      .hero {
-          background-image: url("../images/hero/Header480_2.jpg");
+
+  @media screen and (min-resolution: 2dppx) {.hero {background-image: url("../images/hero/Header480_2.jpg");
       }
   }
 

@@ -74,3 +74,10 @@ fill: currentColor;
         flex-basis: calc((100% - 3*30px)/3);
     }
 }
+
+
+.clients__item {
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 5*30px)/6);
+    }
+}

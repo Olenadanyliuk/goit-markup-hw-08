@@ -1,4 +1,5 @@
-.examples {display: none;}
+.examples {
+    @media screen and (max-width: 1199px) {display: none;}}
 
 .examples {
 $backgr-examples: rgba(47, 48, 58, 0.8);
@@ -51,3 +52,7 @@ text-transform: uppercase;
 color: $white;}
 
 }
+
+
+
+
