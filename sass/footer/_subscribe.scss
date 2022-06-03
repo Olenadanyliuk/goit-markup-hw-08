@@ -2,9 +2,6 @@
     flex-direction: column;
     align-items: center;
 
-
-
-
 &__title {
 font-weight: 700;
 font-size: 14px;
@@ -39,11 +36,7 @@ border-color: $white;}
 @media screen and (min-width: 768px) {.subscribe__input {
     width: 450px;}}
 
-        @media screen and (min-width: 1200px) {
-            .subscribe__input {
-                width: 358px;
-            }
-        }
+      
 
 
 @media screen and (max-width: 1199px) 
@@ -107,34 +100,12 @@ line-height: 1.25;
 @media screen and (min-width: 1200px) {
 .subscribe__input {
     width: 358px;
-    height: 50px;
     margin-right: 12px;
-    border: 1px solid $subscribe-border;
-    background-color: $backgr-dark;
-    border-radius: 4px;
-    padding: 15px 16px;
-    color: $white-dark;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}}
+   }}
 
 @media screen and (min-width: 1200px) {
 
     .subscribe {
         margin-left: 93px;
-
-        &__form {
-            display: flex;
-        }
-
-        &__title {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            color: $white;
-            margin-bottom: 20px;
-        }
-
-        &__position {
-            position: relative;
-        }
     }
 }

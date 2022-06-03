@@ -1,0 +1,37 @@
+.header-contacts__envelope,
+.header-contacts__smartphone {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+
+
+.header-contacts__item:last-child {
+    @media screen and (max-width: 767px) {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+}
+
+.header-contacts__link.tel {
+    @media screen and (max-width: 767px) {
+        color: $blue-color;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+}
+
+
+.header-contacts__link.mail {
+    @media screen and (max-width: 767px) {
+        color: $primary-text-color;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+}

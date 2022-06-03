@@ -1,44 +1,3 @@
-.header { @media screen and (max-width: 767px)
- {padding-top: 16px;
-padding-bottom: 16px;}}
-
-
-
-.header  {
-    border-bottom: 1px solid #ECECEC;}
-
-.mobile-menu {position: relative;
- @media screen and (max-width: 767px){
-display: flex;
-align-items: center;
-justify-content: space-between;
-}}
-
-.menu-button {
- @media screen and (max-width: 767px) {position: absolute;
-    top: -8px;
-    right: 8px;
-    z-index: 200;
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-}}
-
-
-.menu-button  {
-@media screen and (min-width: 768px) {display: none;}}
-
-
-.menu-button .icon-menu {display: none;}
-
-
-.menu-button.is-open .icon-menu {display: block;
-}
-
-
-.menu-button.is-open .icon-cross {display: none;
-}
-
 
 .menu-container {
  @media screen and (max-width: 767px)
@@ -105,12 +64,6 @@ margin-left: 88px;
         color: $blue-color;
     }}
 
-.icon-menu, .icon-cross {
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-menu:hover, .icon-menu:focus {fill: $blue-color; }
-.icon-cross:hover, .icon-cross:focus {fill: $blue-color;}
 
 .nav-list__item:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -127,35 +80,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-
-.header-contacts__envelope, .header-contacts__smartphone {
-        @media screen and (max-width: 767px) {display: none;}}
-
-
-
-
-.header-contacts__item:last-child {
-        @media screen and (max-width: 767px){
-            margin-top: 32px;
- margin-bottom: 64px;}}
-
-    .header-contacts__link.tel {
-            @media screen and (max-width: 767px) {
-        color: $blue-color;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
-        font-weight: 500;}}
-        
-
-    .header-contacts__link.mail {
-            @media screen and (max-width: 767px) {
-        color: $primary-text-color;
-            font-size: 24px;
-            line-height: 1.17;
-            letter-spacing: 0.02em;
-            font-weight: 500;          }
-}
 
  .header-social-list {
      @media screen and (min-width: 768px) {display: none;}}
@@ -214,12 +138,6 @@ display: inline-block;}
     }
 }
 
-.header-container {
-        @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-}
-}
 
 
 .nav-list__link {
@@ -301,7 +219,7 @@ display: inline-block;}
     }
 
          .header-contacts__link:hover,
-         .header-contacts__link__link:focus {
+         .header-contacts__link:focus {
         color: $blue-color;
     }
 }

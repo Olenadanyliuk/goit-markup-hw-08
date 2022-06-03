@@ -1,20 +1,30 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/settings";
 
-@import "../sass/logo";
-@import "../sass/nav";
-@import "../sass/hero";
-@import "../sass/features";
-@import "../sass/examples";
-@import "../sass/team";
-@import "../sass/social_links";
-@import "../sass/clients";
-@import "../sass/footer";
-@import "../sass/address";
-@import "../sass/connect";
-@import "../sass/subscribe";
-@import "../sass/backdrop";
-@import "../sass/modal";
-@import "../sass/form";
-@import "../sass/buttons";
-@import "../sass/portfolio";
+@import '../sass/layouts/logo';
+@import '../sass/layouts/social_links';
+
+@import "../sass/header/header";
+@import "../sass/header/nav";
+@import "../sass/header/header-contacts";
+
+@import '../sass/components/hero';
+@import "../sass/components/features";
+@import "../sass/components/examples";
+@import "../sass/components/team";
+@import '../sass/components/clients';
+
+
+@import "../sass/footer/footer";
+@import "../sass/footer/address";
+@import '../sass/footer/connect';
+@import '../sass/footer/subscribe';
+
+@import '../sass/modal/modal';
+@import "../sass/modal/backdrop";
+@import '../sass/modal/form';
+
+@import "../sass/components/portfolio/buttons";
+@import "../sass/components/portfolio/portfolio";
+
+

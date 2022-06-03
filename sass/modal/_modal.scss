@@ -2,7 +2,7 @@
 position: absolute;
 max-width: 450px;
 max-height: 609px;
-top: 65%;
+top: 60%;
 left: 50%;
 background-color: $white;
 transform: translate(-50%, -50%) scale(1);
@@ -24,10 +24,6 @@ padding-right: 40px;
 
 
 
-.modal { @media screen and (min-width: 767px) and (max-width: 1199px) {
-     
-        top: 60%;
-        left: 50%;}}
 
 
 .modal {
