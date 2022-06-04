@@ -81,16 +81,17 @@ margin-left: 88px;
 }
 
 
-
+.header-social-list {
+    display: flex;
+    padding-top: 80px;
+}
 
 
 
  .header-social-list {
      @media screen and (min-width: 768px) {display: none;}}
 
-.header-social-list {display: flex;
-padding-top: 80px;
-}
+
 
 
 
