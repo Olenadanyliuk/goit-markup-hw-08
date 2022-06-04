@@ -48,6 +48,10 @@ margin-left: 88px;
         display: none}}
 
 
+.menu-tel {
+    @media screen and (max-width: 767px) {margin-bottom: 20px;}}
+
+
 
 .nav-list__link {
         @media screen and (max-width: 768px) {
@@ -84,11 +88,11 @@ margin-left: 88px;
  .header-social-list {
      @media screen and (min-width: 768px) {display: none;}}
 
-.header-social-list {display: flex;}
- .header-social-list {
-     @media screen and (min-width: 768px) {
-         display: none;}
- }
+.header-social-list {display: flex;
+padding-top: 80px;
+}
+
+
 
 
 

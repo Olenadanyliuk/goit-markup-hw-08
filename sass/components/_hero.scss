@@ -63,6 +63,11 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
     text-align: center;
     text-transform: uppercase;}
 
+@media screen and (min-width: 1200px) {
+    .hero__title {
+        font-size: 44px;
+            line-height: 1.36;}
+    }
 
 
 .hero-button {

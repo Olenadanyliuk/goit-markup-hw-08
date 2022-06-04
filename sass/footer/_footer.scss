@@ -21,6 +21,8 @@ justify-content: center;
 
 .footer-tab {margin-bottom: 60px;}
 
+
+
 .footer-tab {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -30,6 +32,10 @@ justify-content: center;
     
     }
 }
+
+.footer-tab {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;}}
 
 @media screen and (min-width: 768px) {
 .footer-block { 
